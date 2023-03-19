@@ -1,0 +1,40 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    text-align: center;
+    margin: 100px auto;
+  }
+  
+  table {
+    margin: 100px auto;
+  }
+  
+  table tbody {
+    text-align: center;
+    margin: 100px auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -5px;
+  }
+  
+  td,
+  th {
+    font: 2em;
+    padding: 10px;
+  }
+  
+  thead {
+    background: #220469;
+    color: #fdf6e3;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background: #90b0f6;
+  }
+  tbody tr:nth-child(even) {
+    background: #7770db;
+  }
+  tfoot {
+    font-weight: bold;
+  }
+  

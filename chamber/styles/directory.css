@@ -1,0 +1,488 @@
+:root {
+    /*FONTS:*/
+    --heading-font: "Roboto", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+  
+    /*COLORS:*/
+    --primary-color:  #0c2e46;
+    --secondary-color: white;
+    --accent1-color: #708db9;
+    --accent2-color:  #fdf2e9;
+    
+  
+    --headline-color-on-white: white;
+    --headline-color-on-color: white;
+    --headline-background-color: #e0e0e0;
+  
+    --paragraph-color-on-white: white;
+    --paragraph-color-on-color: #0c2e46;
+    --paragraph-background-color:  #ebe9fd;
+  
+    --nav-link-color: #e0e0e0;
+    --nav-background-color: #364572;
+    --nav-hover-link-color: #2b3964;
+    --nav-hover-background-color: #fdf2e9;
+      }
+  
+  * {
+    
+    font-family: var(--paragraph-font);
+   
+    letter-spacing: 0.05rem;
+  }
+   
+  .banner-box {
+    padding: -.0rem;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .banner-text {
+    flex-grow: 1;
+  }
+  .banner-close {
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--accent2-color);
+  }
+  .banner-text,
+  .banner-close > span {
+    color: var(--accent2-color);
+    font-weight: bold;
+  }
+  .banner.banner-shown {
+    display: block;
+  }
+  .material-symbols-outlined {
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+  }
+  
+  
+  h2,
+  h3,
+  h4 {
+    font-family: var(--heading-font);
+    color: black;
+  }
+  h2 {
+    text-align: center;
+  }
+  
+  .header-grid {
+    background-color: var(--nav-background-color);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  
+  nav {
+    grid-column: 1/4;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 2vw;
+    border-top: 1px solid RGBA(0, 0, 0, 0.5);
+    font-family: var(--heading-font);
+  }
+  nav ul li.active a {
+    background-color: var(--accent1-color);
+    color: black;
+  }
+  nav ul li a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #hamburgerBtn {
+    margin: 2rem 2vw;
+    background: transparent;
+    border: 1px solid RGBA(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    grid-column: 3/4;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  nav ul.open {
+    display: block;
+  }
+  
+  #hamburgerBtn span:nth-child(1) {
+    display: block;
+  }
+  #hamburgerBtn span:nth-child(2) {
+    display: none;
+    font-family: var(--heading-font);
+  }
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none;
+  }
+  #hamburgerBtn.open span:nth-child(2) {
+    display: block;
+    font-family: var(--heading-font);
+  }
+  
+  .header-date {
+    background-color: var(--accent1-color);
+    color: black;
+    grid-column: 1/4;
+    margin: 10px;
+    padding: 0.25em;
+    text-align: center;
+  }
+  
+  .social-logo {
+    border-radius: 30px;
+    width: 40px;
+    padding: 0.5em;
+    height: auto;
+  }
+  .social {
+    place-self: center;
+  }
+  
+  .home-grid {
+    display: block;
+  }
+  
+  .hero {
+    position: relative;
+  }
+  .jensen-pond img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .hero h1 {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    color: var(--secondary-color);
+  }
+  .hero .join-button {
+    position: absolute;
+    z-index: 3;
+    bottom: 7%;
+    background-color: var(--accent2-color);
+  }
+  .join-button {
+    color: black;
+    right: 2.5%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px 3px var(--primary-color);
+    max-width: 20rem;
+    padding: 0.5em;
+  }
+  
+  .join-button a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: var(--heading-font);
+    color: black;
+  }
+  
+  .home-grid section {
+    border: 1px solid var(--primary-color);
+  }
+  .event {
+    text-align: center;
+    background-color: var(--accent1-color);
+    padding: 0.5em;
+    font-weight: bold;
+  }
+  
+  .weather {
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding: 0.5em;
+  }
+  .event ul {
+    list-style: none;
+  }
+  .event p a {
+    color: black;
+  }
+  
+  .news-release {
+    padding: 0.5em;
+  }
+  
+  .spotlight1 {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--accent2-color);
+  }
+  
+  .spotlight1 div a:hover {
+    background-color: var(--accent1-color);
+  }
+  .spotlight2 div a:hover {
+    background-color: var(--accent2-color);
+  }
+  
+  .spotlight2 {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--accent1-color);
+  }
+  
+  .spotlight3 {
+    display: none;
+  }
+  .company-site-homepage,
+  .company-site-homepage:visited {
+    color: black;
+    padding: 0.5em;
+    text-decoration: none;
+  }
+  
+  .join {
+    display: none;
+  }
+  
+  .discover-grid,
+  .thanks-grid,
+  .directory-grid {
+    text-align: center;
+  }
+  
+  .basic-grid h1 {
+    background-color: #efe4d9;
+    padding: 1em;
+    text-align: center;
+  }
+  .discover-pictures {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .discover-picture picture {
+    width: 100%;
+  }
+  
+  .discover-pictures div {
+    flex: 1;
+  }
+  
+  .syracuseinfo-box {
+    padding: 2em;
+  }
+  .demo-li {
+    list-style: none;
+    border: 2px solid var(--primary-color);
+    padding: 1em;
+  }
+  .demographics ul {
+    list-style: none;
+  }
+  .demographics {
+    padding: 1em;
+  }
+  
+  .discover-img img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  .discover-img img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+  
+   
+  .membership-div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .membership-div {
+    padding: 2rem;
+  }
+  
+    
+  .asterik {
+    color: #1119a7;
+  }
+
+  form {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+  }
+  
+  form fieldset {
+    margin: 2rem 0;
+    border: 3px solid var(--accent1-color);
+    border-radius: 10px;
+    padding: 0.5rem 4%;
+  }
+  form legend {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 0.4rem 0.4rem;
+    border: 3px solid var(--accent1-color);
+  }
+  
+  form label.top,
+  form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+  }
+
+  form label.top input,
+  textarea {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--primary-color);
+  }
+
+  form input.submitBtn {
+    border: none;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    margin: auto;
+    width: 96%;
+    max-width: 20rem;
+  }
+  
+  
+  .companyGrid,
+  .companyList {
+    color: black;
+    padding: 1em;
+  }
+  
+  .company-phone {
+    margin-top: 5px;
+  }
+  .company-site {
+    text-decoration: none;
+  }
+  
+  .companyGrid {
+    background-color: var(--accent2-color);
+  }
+  .companyCard {
+    background-color: var(--secondary-color);
+  }
+  
+  .companyGrid > * {
+    padding: 1.5em;
+    border: 5px solid var(--accent1-color);
+    transition: box-shadow 180ms ease-in;
+    margin: 30px;
+  }
+  
+  .companyGrid > *:hover {
+    box-shadow: 0 0 0 10px var(--accent1-color);
+  }
+  
+  .getList,
+  .getGrid {
+    background-color: var(--primary-color);
+    width: 100px;
+    color: white;
+    padding: 0.6em;
+    border-radius: 20px;
+    font-size: 1.3em;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+  }
+  
+  .companyList > *:nth-child(even) {
+    background-color: var(--accent2-color);
+  }
+  .companyList > *:nth-child(odd) {
+    background-color: var(--accent1-color);
+  }
+  
+  .companyList div {
+    padding: 0.1em;
+  }
+  
+  
+  .website-div {
+    word-wrap: break-word;
+  }
+  .companyGrid .website-div a:visited {
+    color: blue;
+  }
+  .companyList .website-div a:visited,
+  .companyList .website-div a {
+    color: black;
+  }
+  
+  .contactus-info,
+  .pointsofcontact-div {
+    text-align: center;
+  }
+  
+  input.submitBtn.contactusBtn {
+    margin-top: 2em;
+  }
+  .contact-grid h2 {
+    background-color: var(--accent1-color);
+    padding: 0.5em;
+  }
+  footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 0.8em;
+  }
+  .openweather {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  .openweather:visited {
+    color: var(--secondary-color);
+  }
+  
+  .location a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  .info-box > * {
+    padding: 0.5em;
+  }
+  .info-box {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  

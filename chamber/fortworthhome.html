@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Site Planning Home Page</title>
+    <meta name="description" content="Home page information.">
+
+    <link rel="shortcut icon" href="favicon/icon_32f88267bfc9b9b9540121e0394fdd15.ico">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body onload="currentDate(); pancakes()">
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/last-modified.js"></script>
+    <script src="scripts/pancakes.js"></script>
+    <div id="pan" class="cakes">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
+
+    <header>
+        <picture class="logo">
+            <img src="images/logo.jpg"alt="Fort Worth Commerce logo.">
+        </picture>
+        <section class="heading">
+            <h1>Welcome to Fort Worth, Texas</h1>
+            <div class="motto">Everything's Bigger in Texas!</div>
+        </section>
+
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index2.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="discover.html">Gallery</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="contentbox">
+            <h3>Fun Fort Worth Facts</h3>
+            <hr>
+            
+            <img class="ice" src="images/6.jpg" width= 750px height= 500px alt="cowboy on a horse.">
+            <p>-One of Bonnie and Clyde’s hideouts from the law was the historic Stockyards Hotel in Fort Worth. It is now one of the city’s most haunted spots.</p>
+           <p>-The city continues its cattle connection with a free twice-daily cattle drive in the Stockyards. At 11:30 a.m. and 4 p.m. each day, Texas cowhands drive a herd of Texas longhorns down Exchange Avenue.</p>
+        
+        </div>
+
+        <div class="contentbox">
+            <h3>Latin Influence</h3>
+            <hr>
+            
+            <img class="ice" src="images/kids.jpg" width=750px height= 500px alt="two kids smiling.">
+            <p>-Fort Worth was awarded the 18th best city for Hispanic entrepreneurs by ‘Fortune’ magazine in 2018.</p>
+            <p>-Many visitors experience Fort Worth’s Hispanic heritage on the city’s North Side, but Latin American culture permeates many neighborhoods. About a third of Fort Worth’s approximate 900,000 population identifies as Hispanic.</p>
+
+        </div>
+
+        <div class="contentbox">
+            <h3>Highest Record Temperture Recorded</h3>
+            <hr>
+            
+            <img class="ice" src="images/pool.jpg" width=750px height= 500px alt="two peoples feet out of a pool.">
+            <p>-The city’s highest recorded temperature was 115ºF (46ºC) on August 11, 1936, and June 26, 1980.</p>
+            <p>-The hottest month of the year in Fort Worth is August, with an average high of 95°F.</p>
+            <p>-The Dallas-Fort Worth climate is humid subtropical with hot summers. It is also continental, characterized by a wide annual temperature range. </p>
+        </div>
+
+        <div class="contentbox">
+            <h3>Businesses in Fort Worth</h3>
+            <hr>
+            
+            <img class="ice" src="images/business.jpg" width=750px height= 500px alt="people in an office setting.">
+            <p>-Fort Worth Texas has grown over the years from being just a Cowtown of the late 18 centuries to an industrial giant of today. 
+            <p>-The city host a wide range of major industries that span life science, telecommunication, energy, aerospace and defense, professional services, manufacturing and many more.</p>            
+        </div>
+        <footer>
+        
+            <p><span id="copy">&copy;</span> Copyright 2023 | Celena Rousculp | BYU-I Online Learning</p>
+            <div><span id="currentdate"></span></div>
+        </footer>
+    
+        <script src="scripts/last-modified.js" defer></script>
+        <script src="scripts/pancakes.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/toggle.js"></script>  
+        <script src="scripts/webfontload.js"></script>
+        <script src="scripts/json.js"></script>
+        <script src="scripts/weatherapi.js"></script>
+    </body>
+    
+    </html>
